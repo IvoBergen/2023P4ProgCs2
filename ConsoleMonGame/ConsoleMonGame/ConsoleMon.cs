@@ -9,11 +9,11 @@ namespace ConsoleMonGame
     
     internal class ConsoleMon
     {
-        internal int health;
-        internal int energy;
-        internal string name;
+        public int health { get; set; }
+        public int energy { get; set; }
+        public string name { get; set; }
         private List<Skill> skills = new List<Skill>();
-        internal Element weakness;
+        public Element weakness { get; set; }
 
         public ConsoleMon()
         {
@@ -36,6 +36,8 @@ namespace ConsoleMonGame
         {
             this.energy -= energy;
         }
+        
+        
     }
 
     

@@ -9,6 +9,7 @@
             TestSkillFunctions();
             TestConstructors();
             TestConstructors1();
+            TestFactoryFunctions();
         }
         static void TestConsoleMonFunctions()
         {
@@ -67,6 +68,15 @@
             Console.WriteLine(skill.damage == 90);
             Console.WriteLine(skill.element == Element.Fire);
 
+        }
+
+
+        static void TestFactoryFunctions()
+        {
+            Console.WriteLine("TestFactoryFunctions");
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            factory.Load("monsterdata.txt");
+            factory.LoadJson("monsterdata.json");
         }
     }
 }
