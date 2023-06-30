@@ -12,7 +12,7 @@ namespace ConsoleMonGame
         public int health { get; set; }
         public int energy { get; set; }
         public string name { get; set; }
-        private List<Skill> skills = new List<Skill>();
+        public List<Skill> skills{ get; set; }
         public Element weakness { get; set; }
 
         public ConsoleMon()

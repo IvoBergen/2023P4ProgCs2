@@ -17,11 +17,14 @@ namespace ConsoleMonGame
         internal void UseOn(ConsoleMon target, ConsoleMon caster)
         {
             caster.DepleteEnergy(energyCost);
-            target.TakeDamage(damage );
+            target.TakeDamage(damage);
+
+            //Console.WriteLine($"{caster} used {name} on {target}\n");
 
             if (target.weakness == element)
             {
                 target.TakeDamage(damage/2);
+
             }
         }
 
